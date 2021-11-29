@@ -11,3 +11,5 @@ test('ceil with second parameter 2 to be rounded with 2 decimals', () => {
 test('ceil with parameters 6040 and -2 to be 6100', () => {
     expect(ceil(6040, -2)).toBe(6100)
 })
+
+// comment to test travis

@@ -1,7 +1,7 @@
 import compact from "../compact";
 
 // The compact functon return very wierd array here
-test.skip('remove falsey values from array', () => {
+test('remove falsey values from array', () => {
     const array = [0, 1, false, 2, '', 3]
     const filteredArray = compact(array)
 

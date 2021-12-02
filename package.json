@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+	"coverage": "c8 --src src --reporter lcov --exclude /src/.internal --exclude test npm test",
+	"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
+    "coveralls": "^3.1.1",
     "jest": "^27.3.1"
   },
   "dependencies": {
